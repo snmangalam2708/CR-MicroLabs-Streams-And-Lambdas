@@ -7,6 +7,7 @@ import com.zipcodewilmington.streams.TestConstants;
  * @ATTENTION_TO_STUDENTS You are FORBIDDEN from modifying this class
  */
 public class TestConverterList extends TestConversionAgent implements TestConstants {
+
     public TestConverterList() {
         super(new ListConverter(collectionSize));
     }

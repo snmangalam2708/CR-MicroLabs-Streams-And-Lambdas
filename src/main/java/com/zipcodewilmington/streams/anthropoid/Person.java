@@ -13,6 +13,7 @@ import java.util.Date;
  * @ATTENTION_TO_STUDENTS You are FORBIDDEN from modifying this class
  */
 public class Person implements Comparable<Person> {
+
     private String name;
     private Integer age;
     private Boolean isMale;
@@ -21,6 +22,7 @@ public class Person implements Comparable<Person> {
     private String[] aliases;
 
     public Person(String name, Boolean isMale, Long personalId, Date birthDate, String... aliases) {
+
         this.name = name;
         this.isMale = isMale;
         this.personalId = personalId;
@@ -30,26 +32,32 @@ public class Person implements Comparable<Person> {
     }
 
     public String getName() {
+
         return name;
     }
 
     public int getAge() {
+
         return age;
     }
 
     public boolean isMale() {
+
         return isMale;
     }
 
     public long getPersonalId() {
+
         return personalId;
     }
 
     public Date getBirthDate() {
+
         return birthDate;
     }
 
     public String[] getAliases() {
+
         return aliases;
     }
 
@@ -66,6 +74,7 @@ public class Person implements Comparable<Person> {
 
     @Override // implemented for sorting purposes
     public int compareTo(Person o) {
+
         return o.toString().compareTo(this.toString());
     }
 }
